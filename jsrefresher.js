@@ -1,9 +1,9 @@
-const userName = "Max";
-const age = 29;
-const hasHobbies = true;
+let user = {
+    uName: "John Paul",
+    age: 25,
+    greet: function(){
+        console.log(`hello ${this.uName}`);
+    }
+}
 
-const inASentence = (userName, age, hasHobbies) => (
-    console.log(`${userName} is ${age} years old`)
-);
-
-inASentence(userName, age);
+user.greet();
