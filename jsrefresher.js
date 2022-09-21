@@ -1,9 +1,11 @@
-let user = {
-    uName: "John Paul",
-    age: 25,
-    greet: function(){
-        console.log(`hello ${this.uName}`);
-    }
+function callBack(aSring){
+  setTimeout(() => {
+    console.log(aSring);
+  }, 2500);
 }
 
-user.greet();
+setTimeout(callBack => {
+  callBack("Helllo there");
+}, 1500);
+
+console.log("Planet");
