@@ -1,11 +1,23 @@
-function callBack(aSring){
-  setTimeout(() => {
-    console.log(aSring);
-  }, 2500);
-}
+const fetchData = () => {
+  const promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("Ice cream");
+    }, 1500);
+  });
+  return promise;
+};
 
-setTimeout(callBack => {
-  callBack("Helllo there");
-}, 1500);
+setTimeout(() => {
+  fetchData()
+    .then((text) => {
+      console.log(text);
+      return fetchData();
+    })
+    .then((text) => {
+      console.log(text);
+      return fetchData();
+    });
+}, 2000);
 
-console.log("Planet");
+console.log("Hello");
+console.log("Sunshine");
