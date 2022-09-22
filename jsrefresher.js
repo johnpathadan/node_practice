@@ -1,8 +1,8 @@
 const fetchData = () => {
   const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve("Ice cream");
-    }, 1500);
+      resolve("You got this");
+    }, 2000);
   });
   return promise;
 };
@@ -18,6 +18,3 @@ setTimeout(() => {
       return fetchData();
     });
 }, 2000);
-
-console.log("Hello");
-console.log("Sunshine");
