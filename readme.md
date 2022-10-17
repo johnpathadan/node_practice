@@ -1,1 +1,0 @@
-This is a practice repository for node and express course
