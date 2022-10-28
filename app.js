@@ -1,7 +1,8 @@
-// const names = require("./3-names");
-// const sayHi = require("./4-utils");
-// const data = require("./5-alternative");
+const randomnumber = 15;
+if (randomnumber > 10) {
+  console.log("Number is eligible");
+} else {
+  console.log("Number is not eligible");
+}
 
-// sayHi(data.person.name);
-require("./6-mind-granade");
-//Terminal: The sum is: 15
+console.log("node app");
